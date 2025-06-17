@@ -1,0 +1,785 @@
+.top-banner {
+    background: url('../../images/music/banner.jpg') center center;
+    background-size: cover;
+    position: relative;
+    padding: 60px 0;
+    z-index: 1;
+}
+
+.top-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(3, 107, 107, 0.75);
+    z-index: -1;
+}
+
+.top-banner h1 {
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-weight: 800;
+    letter-spacing: 8px;
+}
+
+.top-banner p {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* 全局样式 */
+body {
+    font-family: "Noto Sans SC", sans-serif;
+    color: #333;
+    background-color: #f7f8fc;
+}
+
+.section-header {
+    margin-bottom: 50px;
+    padding-top: 20px;
+}
+
+.section-subtitle {
+    color: #666;
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Hero区域样式 */
+.music-hero {
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+
+.music-hero-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.music-hero-content p {
+    color: #555;
+    line-height: 1.7;
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+}
+
+.music-stats {
+    margin-top: 30px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    min-width: 100px;
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #648ee3;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    color: #555;
+    font-size: 1.3rem;
+}
+
+.music-visual {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.music-visual img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.music-visual:hover img {
+    transform: scale(1.02);
+}
+
+.play-button {
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.play-button:hover {
+    background: rgba(100, 142, 227, 0.8) !important;
+    transform: translate(-50%, -50%) scale(1.1) !important;
+}
+
+/* 乐器展示区样式 */
+.music-instruments {
+    padding: 70px 0;
+    background-color: #fff;
+}
+
+.instruments-categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.instrument-category {
+    background-color: transparent;
+    border: 2px solid #648ee3;
+    color: #648ee3;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.instrument-category:hover {
+    background-color: rgba(100, 142, 227, 0.1);
+}
+
+.instrument-category.active {
+    background-color: #648ee3;
+    color: white;
+}
+
+.instruments-gallery {
+    margin-top: 40px;
+}
+
+.instrument-card {
+    background-color: #f9fafd;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.instrument-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(100, 142, 227, 0.15);
+}
+
+.instrument-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.instrument-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.instrument-card:hover .instrument-image img {
+    transform: scale(1.05);
+}
+
+.instrument-info {
+    padding: 20px;
+}
+
+.instrument-info h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #4e54c8;
+    margin-bottom: 10px;
+}
+
+.instrument-info p {
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.instrument-tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.instrument-tags span {
+    background-color: rgba(100, 142, 227, 0.1);
+    color: #648ee3;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.btn-listen {
+    background-color: #4e54c8;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-listen:hover {
+    background-color: #3e43a3;
+}
+
+/* 经典音乐作品区域样式 */
+.classic-works {
+    padding: 70px 0;
+    background-color: #f7f8fc;
+}
+
+.music-list {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.music-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #eee;
+}
+
+.music-item:last-child {
+    border-bottom: none;
+}
+
+.music-item.active {
+    background-color: #eaf1fd;
+}
+
+.music-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #aaa;
+    width: 60px;
+    text-align: center;
+}
+
+.music-item.active .music-number {
+    color: #648ee3;
+}
+
+.music-content {
+    flex: 1;
+}
+
+.music-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    margin-top: 7px;
+}
+
+.music-content p {
+    font-size: 1.2rem;
+    color: #777;
+    margin: 0;
+}
+
+.music-play {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #648ee3;
+    font-size: 1.2rem;
+}
+
+.music-player {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.player-artwork {
+    position: relative;
+    width: 100%;
+    padding-top: 53%;
+    /* 4:3 比例，可以根据需要调整为 56.25% (16:9) 或 100% (1:1) */
+    overflow: hidden;
+}
+
+.player-artwork img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.player-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.player-controls button {
+    background-color: transparent;
+    border: none;
+    color: #4e54c8;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.player-controls button:hover {
+    transform: scale(1.1);
+    color: #3e43a3;
+}
+
+#player-play {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4e54c8;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.player-info {
+    padding: 20px;
+}
+
+.player-info h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #4e54c8;
+    margin-bottom: 10px;
+}
+
+.player-info p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.progress-container {
+    margin-top: 15px;
+}
+
+.progress-bar {
+    height: 5px;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.progress-current {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30%;
+    background-color: #648ee3;
+    border-radius: 5px;
+}
+
+.progress-time {
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* 现代民族音乐发展区域样式 */
+.modern-music {
+    padding: 70px 0;
+    background-color: #fff;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 2px;
+    background-color: #ddd;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #648ee3;
+    z-index: 1;
+}
+
+.timeline-date {
+    font-weight: 700;
+    color: #4e54c8;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-content {
+    background-color: #f9fafd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    width: 80%;
+    margin-top: 20px;
+}
+
+.timeline-content h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #4e54c8;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    color: #666;
+    margin: 0;
+}
+
+/* 横向时间轴样式 */
+.timeline-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0 10px;
+    position: relative;
+    padding: 40px 0;
+}
+
+/* 横向时间线 */
+.timeline-horizontal::before {
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #ddd;
+    z-index: 1;
+}
+
+.timeline-item-horizontal {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    max-width: 33.333%;
+    z-index: 2;
+}
+
+.timeline-dot-horizontal {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #648ee3;
+    margin-bottom: 20px;
+    border: 4px solid #fff;
+    box-shadow: 0 0 0 3px rgba(100, 142, 227, 0.3);
+    z-index: 3;
+    transition: all 0.3s ease;
+}
+
+.timeline-item-horizontal:hover .timeline-dot-horizontal {
+    transform: scale(1.2);
+    background-color: #4e54c8;
+    box-shadow: 0 0 0 4px rgba(100, 142, 227, 0.4);
+}
+
+.timeline-date-horizontal {
+    font-weight: 700;
+    color: #4e54c8;
+    margin: 15px 0;
+    padding: 8px 16px;
+    background-color: #f0f4fa;
+    border-radius: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.timeline-item-horizontal:hover .timeline-date-horizontal {
+    background-color: #e4ecf9;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.timeline-content-horizontal {
+    text-align: center;
+    background-color: #fff;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-item-horizontal:hover .timeline-content-horizontal {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(100, 142, 227, 0.15);
+}
+
+.timeline-content-horizontal h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #4e54c8;
+    margin-bottom: 12px;
+}
+
+.timeline-content-horizontal p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* 响应式调整 */
+@media (max-width: 991px) {
+    .timeline-horizontal {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 50px;
+    }
+
+    .timeline-horizontal::before {
+        top: 0;
+        bottom: 0;
+        left: 25px;
+        right: auto;
+        width: 3px;
+        height: 100%;
+    }
+
+    .timeline-item-horizontal {
+        max-width: 100%;
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+
+    .timeline-dot-horizontal {
+        position: absolute;
+        left: -50px;
+        top: 15px;
+        margin-bottom: 0;
+    }
+
+    .timeline-date-horizontal {
+        text-align: left;
+        width: 120px;
+        margin: 0 15px 0 0;
+    }
+
+    .timeline-content-horizontal {
+        flex: 1;
+        text-align: left;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 767px) {
+    .timeline-horizontal {
+        padding-left: 40px;
+    }
+
+    .timeline-horizontal::before {
+        left: 15px;
+    }
+
+    .timeline-dot-horizontal {
+        left: -40px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .timeline-date-horizontal {
+        width: auto;
+        font-size: 14px;
+        padding: 5px 12px;
+    }
+
+    .timeline-content-horizontal {
+        padding: 15px;
+        min-height: 0;
+    }
+
+    .timeline-content-horizontal h3 {
+        font-size: 1.1rem;
+    }
+
+    .timeline-content-horizontal p {
+        font-size: 0.9rem;
+    }
+}
+
+.music-genres {
+    margin-top: 40px;
+}
+
+.genre-card {
+    background-color: #f9fafd;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.genre-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(100, 142, 227, 0.15);
+}
+
+.genre-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    background-color: rgba(100, 142, 227, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #648ee3;
+    font-size: 28px;
+}
+
+.genre-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #4e54c8;
+    margin-bottom: 15px;
+}
+
+.genre-card p {
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.instrument-info {
+    padding-bottom: 15px;
+    /* 增加底部内边距，补偿移除按钮后的空间 */
+}
+
+.instrument-tags {
+    margin-bottom: 0;
+    /* 调整标签的下边距 */
+}
+
+/* 响应式设计 */
+@media (max-width: 991px) {
+    .music-hero {
+        padding: 50px 0;
+    }
+    
+    .music-hero-content {
+        margin-bottom: 40px;
+    }
+    
+    .timeline::before {
+        left: 40px;
+    }
+    
+    .timeline-dot {
+        left: 40px;
+    }
+    
+    .timeline-content {
+        width: calc(100% - 60px);
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .music-stats {
+        gap: 20px;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .instrument-categories {
+        gap: 10px;
+    }
+    
+    .instrument-category {
+        padding: 6px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-dot {
+        left: 20px;
+    }
+    
+    .timeline-content {
+        width: calc(100% - 40px);
+    }
+}

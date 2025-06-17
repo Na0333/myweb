@@ -1,0 +1,99 @@
+/* 资源链接 */
+.resource-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resource-links ul li {
+    margin-bottom: 12px;
+}
+
+.resource-links ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: flexbox;
+    padding: 3px 0;
+}
+
+.resource-links ul li a:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+/* 语言切换 */
+.language-switch label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+.language-switch select {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 8px top 50%;
+}
+
+.language-switch select:hover:not(:focus) {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.language-switch select:focus {
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: none;
+}
+
+.language-switch select option {
+    background-color: #444;
+    color: white;
+    padding: 8px;
+}
+
+/* 社交图标 */
+.social-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.social-icons a {
+    color: #ddd;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 12px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}

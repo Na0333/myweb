@@ -1,0 +1,358 @@
+/* 添加统一的页头边距 */
+header {
+    margin-bottom: 30px;
+}
+
+.top-banner {
+    background: url('../../images/custom/banner.jpg') center center;
+    background-size: cover;
+    position: relative;
+    padding: 60px 0;
+    z-index: 1;
+}
+
+.top-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(3, 107, 107, 0.75);
+    z-index: -1;
+}
+
+.top-banner h1 {
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-weight: 800;
+    letter-spacing: 8px;
+}
+
+.top-banner p {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+main section:first-child {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+body {
+    background: #f7f8fc;
+    font-family: "Noto Sans SC", sans-serif;
+    color: #333;
+}
+
+body {
+    background: #fff;
+    font-family: "Noto Sans SC", sans-serif;
+    color: #333;
+}
+
+.custom-section-title {
+    font-family: "Noto Sans SC", sans-serif;
+    font-weight: bold;
+    color: #3E2723;
+    letter-spacing: 2px;
+}
+
+.custom-section-subtitle {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.custom-cards-row {
+    margin-bottom: 3rem;
+}
+
+.custom-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+    transition: box-shadow 0.2s, transform 0.2s;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.custom-card:hover {
+    box-shadow: 0 6px 24px rgba(78, 84, 200, 0.13);
+    transform: translateY(-6px) scale(1.02);
+}
+
+.custom-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.custom-card-body {
+    padding: 1.3rem 1.2rem 1.2rem 1.2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.custom-card-title {
+    font-size: 1.18rem;
+    font-weight: bold;
+    color: #4e54c8;
+    margin-bottom: 0.7rem;
+}
+
+/* 确保在 custom-card 中的 subtopic-tag 保持原有风格 */
+.custom-card-body .subtopic-tag {
+    margin-top: 0.5rem;
+    display: inline-block;
+    background: #f1f3fa;
+    color: #648ee3;
+    border-radius: 12px;
+    padding: 3px 12px;
+    font-size: 0.92rem;
+    font-weight: normal;
+    transition: all 0.3s ease;
+    max-width: 63px; /* 限制最大宽度 */
+    white-space: nowrap; /* 防止文本换行 */
+    overflow: hidden; /* 隐藏溢出内容 */
+    text-overflow: ellipsis; /* 显示省略号 */
+}
+
+/* 在卡片悬停时改变标签颜色 */
+.custom-card:hover .subtopic-tag {
+    background: #e6eaff;
+    color: #4e54c8;
+}
+
+.custom-table th,
+.custom-table td {
+    vertical-align: middle !important;
+}
+
+.custom-table th {
+    background: #f7f8fa;
+    color: #333;
+}
+
+.custom-table tr:hover {
+    background: #f1f3fa;
+}
+
+/* 节庆活动横向卡片美化 */
+.festival-slider {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+
+.festival-card {
+    min-width: 340px;
+    max-width: 380px;
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 2px 16px rgba(100, 142, 227, 0.10);
+    display: flex;
+    flex-direction: column;
+}
+
+.festival-card-img-wrap {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.festival-card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 保持原有的festival-card-badge样式，但使用subtopic-tag类 */
+.festival-card-img-wrap .subtopic-tag.festival-badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: #648ee3;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 16px;
+    border-radius: 999px;
+    max-width: none; /* 覆盖默认的最大宽度限制 */
+    white-space: normal; /* 允许文本换行 */
+    overflow: visible; /* 显示全部内容 */
+    text-overflow: clip; /* 不显示省略号 */
+    margin-top: 0; /* 重置margin */
+    transition: background 0.3s, transform 0.3s;
+}
+
+.festival-card-badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: #648ee3;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 16px;
+    border-radius: 999px;
+}
+
+.festival-card-body {
+    padding: 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.festival-card-title {
+    font-size: 1.18rem;
+    font-weight: bold;
+    color: #3E2723;
+    margin-bottom: 10px;
+}
+
+.festival-card-desc {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+.festival-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.festival-card-footer a {
+    color: #648ee3;
+    text-decoration: underline;
+}
+
+/* 切换按钮样式 */
+.festival-switch {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 18px;
+    gap: 10px;
+}
+
+.festival-switch-btn {
+    background: #fff;
+    border: 1px solid #648ee3;
+    color: #648ee3;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.festival-switch-btn:hover {
+    background: #648ee3;
+    color: #fff;
+}
+
+
+/* 增强事件日历在custom页面的样式 */
+.event-calendar {
+    background: #fff;
+    border-radius: 18px;
+    padding: 25px 30px;
+    box-shadow: 0 4px 20px rgba(100, 142, 227, 0.1);
+    max-width: 950px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* 修改事件日历样式以适应新的结构 */
+.event-calendar .event-date {
+    background: #648ee3;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 12px 3px;
+    text-align: center;
+}
+
+.event-calendar .event-date[data-suffix]:after {
+    content: none;
+}
+
+/* 调整事件详情部分 */
+.event-calendar .event-details h4 {
+    margin: 0 0 8px 0;
+    font-weight: bold;
+    font-size: 16px;
+    color: #666;
+}
+
+/* 增强事件项的样式 */
+.event-calendar .event-item {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 18px;
+    border: 1px solid #eaedf5;
+    background: #f9fafc;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* 增强鼠标悬停效果 - 保持节日名称可见度 */
+.event-calendar .event-item:hover {
+    transform: translateX(3px);
+    border-color: #648ee3;
+    box-shadow: 0 4px 15px rgba(100, 142, 227, 0.15);
+    background: #eaf1fd;
+}
+
+.event-calendar .event-item:hover .event-date {
+    background: #4a6eb8;
+    color: white;
+    box-shadow: 0 0 12px rgba(100, 142, 227, 0.3);
+}
+
+.event-calendar .event-item:hover .event-details h4 {
+    color: #3E2723;
+    font-weight: bold;
+}
+
+.event-calendar .event-item:hover .event-details p {
+    color: #333;
+}
+
+.event-calendar .event-item:active {
+    transform: translateX(1px);
+    box-shadow: 0 2px 8px rgba(100, 142, 227, 0.1);
+}
+
+/* 响应式调整保持不变 */
+@media (max-width: 767px) {
+    .event-calendar .event-date {
+        width: 100px;
+        font-size: 18px;
+        padding: 10px 5px;
+    }
+    
+    .event-calendar .event-details h4 {
+        font-size: 14px;
+    }
+}

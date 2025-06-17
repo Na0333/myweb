@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>民族音乐</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入bootstrap和自定义样式 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/web-components/base.css">
+    <link rel="stylesheet" href="assets/css/web-components/components.css">
+    <link rel="stylesheet" href="assets/css/web-components/footer.css">
+    <!-- 页面自定义样式 -->
+    <link rel="stylesheet" href="assets/css/subpages/music.css">
+    <!-- Font Awesome图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Logo -->
+    <div class="site-logo">
+        <img src="assets/images/icon/未来设计师大赛-logo.png" alt="未来设计师大赛">
+    </div>
+    <!-- Header -->
+    <header>
+        <!--TopBanner-->
+        <div class="top-banner">
+            <div class="container">
+                <h1 class="text-center">民族音乐</h1>
+                <p class="text-center">感受中华民族多彩音乐艺术与精神家园</p>
+            </div>
+        </div>
+        <!-- 导航栏 -->
+        <nav class="fixed-nav">
+            <ul class="text-center">
+                <li><a href="javascript:void(0)" class="nav-link" data-nav="index">首页</a></li>
+                <li><a href="javascript:void(0)" class="nav-link" data-nav="history">民族历史</a></li>
+                <li><a href="javascript:void(0)" class="nav-link" data-nav="custom">民族风俗</a></li>
+                <li><a href="javascript:void(0)" class="nav-link" data-nav="heritage">非遗传承</a></li>
+                <li><a href="javascript:void(0)" class="nav-link active" data-nav="music">民族音乐</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 民族音乐概览 -->
+        <section class="music-hero py-5">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="music-hero-content pe-lg-4">
+                        <h2 class="mb-3">中国民族音乐</h2>
+                        <div class="title-divider" style="margin-left: 0; margin-bottom: 20px;"></div>
+                        <p class="lead mb-4">
+                            中国民族音乐是中华民族文化的重要组成部分，源远流长，内涵丰富。源于劳动和生活，表达情感与理想，反映各民族的历史、生活方式和审美观念，具有鲜明的地域特色和民族特点。</p>
+                        <div class="music-stats d-flex flex-wrap">
+                            <div class="stat-item me-4 mb-3">
+                                <span class="stat-number">56</span>
+                                <span class="stat-label">民族</span>
+                            </div>
+                            <div class="stat-item me-4 mb-3">
+                                <span class="stat-number">300+</span>
+                                <span class="stat-label">传统乐器</span>
+                            </div>
+                            <div class="stat-item mb-3">
+                                <span class="stat-number">8000+</span>
+                                <span class="stat-label">民歌曲目</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 民族乐器展示 -->
+        <section class="music-instruments">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>传统乐器</h2>
+                    <div class="title-divider"></div>
+                    <p class="section-subtitle">探索中华民族的音乐瑰宝，感受千年文化的声音传承</p>
+                </div>
+
+                <div class="instruments-categories">
+                    <button class="instrument-category active" data-category="all">全部</button>
+                    <button class="instrument-category" data-category="blowing">吹奏乐器</button>
+                    <button class="instrument-category" data-category="stringed">弦鸣乐器</button>
+                    <button class="instrument-category" data-category="percussion">打击乐器</button>
+                </div>
+
+                <div class="row instruments-gallery">
+                    <!-- 乐器项 - 二胡 -->
+                    <div class="col-md-6 col-lg-4 instrument-item" data-category="stringed">
+                        <div class="instrument-card">
+                            <div class="instrument-image">
+                                <img src="assets/images/music/instruments/erhu.jpg" alt="二胡">
+                            </div>
+                            <div class="instrument-info">
+                                <h3>二胡</h3>
+                                <p>被誉为"中国提琴"，音色哀婉动人，是中国传统弦乐器中最具代表性的乐器之一。</p>
+                                <div class="instrument-tags">
+                                    <span>弦鸣乐器</span>
+                                    <span>汉族</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 乐器项 - 笛子 -->
+                    <div class="col-md-6 col-lg-4 instrument-item" data-category="blowing">
+                        <div class="instrument-card">
+                            <div class="instrument-image">
+                                <img src="assets/images/music/instruments/dizi.jpg" alt="笛子">
+                            </div>
+                            <div class="instrument-info">
+                                <h3>笛子</h3>
+                                <p>又称横笛，音色清亮悠扬，能表现出欢快、明朗、忧伤等多种情绪，广泛用于民族音乐。</p>
+                                <div class="instrument-tags">
+                                    <span>吹奏乐器</span>
+                                    <span>汉族</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 乐器项 - 琵琶 -->
+                    <div class="col-md-6 col-lg-4 instrument-item" data-category="stringed">
+                        <div class="instrument-card">
+                            <div class="instrument-image">
+                                <img src="assets/images/music/instruments/pipa.jpg" alt="琵琶">
+                            </div>
+                            <div class="instrument-info">
+                                <h3>琵琶</h3>
+                                <p>中国传统弹拨乐器，有"民族乐器皇后"之称，音色明亮，表现力丰富，技巧多样。</p>
+                                <div class="instrument-tags">
+                                    <span>弦鸣乐器</span>
+                                    <span>汉族</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 乐器项 - 马头琴 -->
+                    <div class="col-md-6 col-lg-4 instrument-item" data-category="stringed">
+                        <div class="instrument-card">
+                            <div class="instrument-image">
+                                <img src="assets/images/music/instruments/matouqin.jpg" alt="马头琴">
+                            </div>
+                            <div class="instrument-info">
+                                <h3>马头琴</h3>
+                                <p>蒙古族传统弓弦乐器，琴头雕刻成马头形状，音色深沉，能模仿马嘶、驼鸣等声音。</p>
+                                <div class="instrument-tags">
+                                    <span>弦鸣乐器</span>
+                                    <span>蒙古族</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 乐器项 - 葫芦丝 -->
+                    <div class="col-md-6 col-lg-4 instrument-item" data-category="blowing">
+                        <div class="instrument-card">
+                            <div class="instrument-image">
+                                <img src="assets/images/music/instruments/hulusi.jpg" alt="葫芦丝">
+                            </div>
+                            <div class="instrument-info">
+                                <h3>葫芦丝</h3>
+                                <p>云南傣族、彝族等民族的传统吹奏乐器，音色柔美，形似葫芦，易学易懂，深受喜爱。</p>
+                                <div class="instrument-tags">
+                                    <span>吹奏乐器</span>
+                                    <span>傣族/彝族</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 乐器项 - 扬琴 -->
+                    <div class="col-md-6 col-lg-4 instrument-item" data-category="percussion">
+                        <div class="instrument-card">
+                            <div class="instrument-image">
+                                <img src="assets/images/music/instruments/yangqin.jpg" alt="扬琴">
+                            </div>
+                            <div class="instrument-info">
+                                <h3>扬琴</h3>
+                                <p>通过敲击琴弦发音的打击乐器，音域宽广，音色明亮透亮，被称为"东方钢琴"。</p>
+                                <div class="instrument-tags">
+                                    <span>打击乐器</span>
+                                    <span>汉族</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 经典音乐作品 -->
+        <section class="classic-works">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>经典音乐作品</h2>
+                    <div class="title-divider"></div>
+                    <p class="section-subtitle">传世乐章，跨越时空的艺术瑰宝</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- 作品列表 -->
+                        <div class="music-list">
+                            <div class="music-item active" data-music="high-mountains">
+                                <div class="music-number">01</div>
+                                <div class="music-content">
+                                    <h3>高山流水</h3>
+                                    <p>古琴名曲，表达知音难觅的情感，是中国十大古曲之一。</p>
+                                </div>
+                                <div class="music-play">
+                                    <i class="fa fa-play"></i>
+                                </div>
+                            </div>
+
+                            <div class="music-item" data-music="jasmine">
+                                <div class="music-number">02</div>
+                                <div class="music-content">
+                                    <h3>茉莉花</h3>
+                                    <p>中国民歌，以优美的旋律和意境深远的歌词闻名。</p>
+                                </div>
+                                <div class="music-play">
+                                    <i class="fa fa-play"></i>
+                                </div>
+                            </div>
+
+                            <div class="music-item" data-music="butterfly-lovers">
+                                <div class="music-number">03</div>
+                                <div class="music-content">
+                                    <h3>梁祝</h3>
+                                    <p>"东方的罗密欧与朱丽叶"，中西合璧的小提琴协奏曲。</p>
+                                </div>
+                                <div class="music-play">
+                                    <i class="fa fa-play"></i>
+                                </div>
+                            </div>
+
+                            <div class="music-item" data-music="phoenix">
+                                <div class="music-number">04</div>
+                                <div class="music-content">
+                                    <h3>月光下的凤尾竹</h3>
+                                    <p>柔美舒缓的傣族风格乐曲，葫芦丝音色宛如月光流淌，描绘傣家风情</p>
+                                </div>
+                                <div class="music-play">
+                                    <i class="fa fa-play"></i>
+                                </div>
+                            </div>
+
+                            <div class="music-item" data-music="horse-race">
+                                <div class="music-number">05</div>
+                                <div class="music-content">
+                                    <h3>赛马</h3>
+                                    <p>二胡名曲，描绘了蒙古族牧民赛马的欢快场景。</p>
+                                </div>
+                                <div class="music-play">
+                                    <i class="fa fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <!-- 音乐播放器 -->
+                        <div class="music-player">
+                            <div class="player-artwork">
+                                <img id="current-artwork" src="assets/images/music/works/high-mountains.jpg" alt="高山流水">
+                                <div class="player-controls">
+                                    <button type="button" id="player-prev" aria-label="上一首"><i
+                                            class="fa fa-step-backward"></i></button>
+                                    <button id="player-play" aria-label="播放/暂停"><i class="fa fa-play"></i></button>
+                                    <button type="button" id="player-next" aria-label="下一首"><i
+                                            class="fa fa-step-forward"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="player-info">
+                                <h3 id="current-title">高山流水</h3>
+                                <p id="current-description">古琴名曲，表达知音难觅的情感，是中国十大古曲之一。</p>
+                                <div class="progress-container">
+                                    <div class="progress-bar">
+                                        <div class="progress-current"></div>
+                                    </div>
+                                    <div class="progress-time">
+                                        <span id="current-time">00:00</span>
+                                        <span id="total-time">03:47</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 现代民族音乐发展 -->
+        <section class="modern-music">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>现代民族音乐发展</h2>
+                    <div class="title-divider"></div>
+                    <p class="section-subtitle">传统与现代的碰撞，焕发出新的生命力</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <!-- 横向时间轴 -->
+                        <div class="timeline-horizontal">
+                            <!-- 1950s-1970s时期 -->
+                            <div class="timeline-item-horizontal">
+                                <div class="timeline-date-horizontal">1950s - 1970s</div>
+                                <div class="timeline-content-horizontal">
+                                    <h3>民族音乐的整理与研究期</h3>
+                                    <p>这一时期，学者们开始大规模收集、整理和研究各民族的传统音乐，建立了初步的民族音乐理论体系。</p>
+                                </div>
+                            </div>
+
+                            <!-- 1980s-1990s时期 -->
+                            <div class="timeline-item-horizontal">
+                                <div class="timeline-date-horizontal">1980s - 1990s</div>
+                                <div class="timeline-content-horizontal">
+                                    <h3>民族音乐创新与发展期</h3>
+                                    <p>民族音乐开始与西方音乐相结合，出现了一批融合东西方元素的作品，如《梁祝》小提琴协奏曲广受欢迎。</p>
+                                </div>
+                            </div>
+
+                            <!-- 2000s至今时期 -->
+                            <div class="timeline-item-horizontal">
+                                <div class="timeline-date-horizontal">2000s - 至今</div>
+                                <div class="timeline-content-horizontal">
+                                    <h3>民族音乐全球化与数字化时代</h3>
+                                    <p>民族音乐借助互联网平台走向世界，与流行音乐、电子音乐等多种风格融合，呈现出多元化发展趋势。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 音乐流派展示 -->
+                <div class="music-genres">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="genre-card">
+                                <div class="genre-icon">
+                                    <i class="fa fa-music"></i>
+                                </div>
+                                <h3>民族流行</h3>
+                                <p>结合传统民族音乐元素与现代流行音乐，代表人物如韩红、降央卓玛等。</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="genre-card">
+                                <div class="genre-icon">
+                                    <i class="fas fa-guitar"></i>
+                                </div>
+                                <h3>新民乐</h3>
+                                <p>用传统乐器演奏现代曲风，或用现代方式诠释传统乐曲，代表团体如十二乐坊。</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="genre-card">
+                                <div class="genre-icon">
+                                    <i class="fa fa-headphones"></i>
+                                </div>
+                                <h3>电子民族</h3>
+                                <p>将民族音乐元素与电子音乐结合，创造出具有东方韵味的现代电子音乐作品。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="resource-links">
+                        <h4>资源链接</h4>
+                        <ul>
+                            <li><a href="#">中国民族文化资源库</a></li>
+                            <li><a href="#">中华非物质文化遗产网</a></li>
+                            <li><a href="#">中国民族博物馆</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="language-switch">
+                        <h4>多语言支持</h4>
+                        <label for="language-select">选择语言</label>
+                        <select id="language-select" aria-label="选择语言">
+                            <option value="zh">中文</option>
+                            <option value="en">英文</option>
+                            <option value="bo">藏文</option>
+                            <option value="ug">维文</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="social-media">
+                        <h4>关注我们</h4>
+                        <div class="social-icons">
+                            <a href="#"><img src="assets/images/icon/sm-wechat.ico" alt="微信" class="social-icon"> 微信</a>
+                            <a href="#"><img src="assets/images/icon/sm-weibo.ico" alt="微博" class="social-icon"> 微博</a>
+                            <a href="#"><img src="assets/images/icon/sm-dy.ico" alt="抖音" class="social-icon"> 抖音</a>
+                            <a href="#"><img src="assets/images/icon/sm-bili.ico" alt="B站" class="social-icon"> B站</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-1.11.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+
+        // 更新音乐播放器数据，添加本地音频文件路径
+        const musicData = [
+            {
+                id: 'high-mountains',
+                title: '高山流水',
+                description: '古琴名曲，表达知音难觅的情感，是中国十大古曲之一。',
+                artworkUrl: 'assets/images/music/works/high-mountains.jpg',
+                audioUrl: 'assets/audio/high-mountains.mp3', // 添加本地音频文件路径
+                duration: '03:47'
+            },
+            {
+                id: 'jasmine',
+                title: '茉莉花',
+                description: '中国民歌，以优美的旋律和意境深远的歌词闻名。',
+                artworkUrl: 'assets/images/music/works/jasmine.jpg',
+                audioUrl: 'assets/audio/jasmine.mp3', // 添加本地音频文件路径
+                duration: '04:04'
+            },
+            {
+                id: 'butterfly-lovers',
+                title: '梁祝',
+                description: '"东方的罗密欧与朱丽叶"，中西合璧的小提琴协奏曲。',
+                artworkUrl: 'assets/images/music/works/butterfly-lovers.jpg',
+                audioUrl: 'assets/audio/butterfly-lovers.mp3', // 添加本地音频文件路径
+                duration: '06:38'
+            },
+            {
+                id: 'phoenix',
+                title: '月光下的凤尾竹',
+                description: '柔美舒缓的傣族风格乐曲，葫芦丝音色宛如月光流淌，描绘傣家风情',
+                artworkUrl: 'assets/images/music/works/phoenix-tail-bamboo-in-the-moonlight.jpg',
+                audioUrl: 'assets/audio/phoenix-tail-bamboo-in-the-moonlight.mp3', // 添加本地音频文件路径
+                duration: '04:47'
+            },
+            {
+                id: 'horse-race',
+                title: '赛马',
+                description: '二胡名曲，描绘了蒙古族牧民赛马的欢快场景。',
+                artworkUrl: 'assets/images/music/works/horse-racing.jpg',
+                audioUrl: 'assets/audio/horse-racing.mp3', // 添加本地音频文件路径
+                duration: '01:39'
+            }
+        ];
+
+        // 乐器分类筛选
+        document.querySelectorAll('.instrument-category').forEach(button => {
+            button.addEventListener('click', function () {
+                // 移除所有按钮的活跃状态
+                document.querySelectorAll('.instrument-category').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+
+                // 添加当前按钮的活跃状态
+                this.classList.add('active');
+
+                const category = this.getAttribute('data-category');
+
+                // 显示/隐藏乐器项
+                document.querySelectorAll('.instrument-item').forEach(item => {
+                    if (category === 'all' || item.getAttribute('data-category') === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // 添加全局音频对象
+        let audioPlayer = new Audio();
+        let currentMusicIndex = 0;
+        let isPlaying = false;
+        let progressInterval;
+
+        // 在页面加载完成后初始化播放器
+        document.addEventListener('DOMContentLoaded', function () {
+            // 初始化音频播放器
+            // audioPlayer.addEventListener('ended', function () {
+            //     // 歌曲播放结束后自动播放下一首
+            //     document.getElementById('player-next').click();
+            // });
+
+            audioPlayer.addEventListener('ended', function () {
+                isPlaying = false;
+                document.getElementById('player-play').innerHTML = '<i class="fa fa-play"></i>';
+                // 可选：重置进度条
+                document.querySelector('.progress-current').style.width = '0%';
+                document.getElementById('current-time').textContent = '00:00';
+            });
+
+            // 音频时间更新事件
+            audioPlayer.addEventListener('timeupdate', function () {
+                if (!isPlaying) return;
+
+                const currentTime = audioPlayer.currentTime;
+                const duration = audioPlayer.duration;
+
+                // 更新播放时间显示
+                const displayMinutes = Math.floor(currentTime / 60).toString().padStart(2, '0');
+                const displaySeconds = Math.floor(currentTime % 60).toString().padStart(2, '0');
+                document.getElementById('current-time').textContent = `${displayMinutes}:${displaySeconds}`;
+
+                // 更新进度条
+                const progressPercentage = (currentTime / duration) * 100;
+                document.querySelector('.progress-current').style.width = `${progressPercentage}%`;
+            });
+
+            // 音乐项点击事件
+            document.querySelectorAll('.music-item').forEach((item, index) => {
+                item.addEventListener('click', function () {
+                    // 移除所有音乐项的活跃状态
+                    document.querySelectorAll('.music-item').forEach(i => {
+                        i.classList.remove('active');
+                    });
+
+                    // 添加当前项的活跃状态
+                    this.classList.add('active');
+
+                    // 更新当前音乐索引并更新播放器
+                    currentMusicIndex = index;
+                    updatePlayer();
+
+                    // 自动开始播放
+                    startPlaying();
+                });
+            });
+
+            // 播放/暂停按钮点击事件
+            document.getElementById('player-play').addEventListener('click', function () {
+                if (isPlaying) {
+                    pausePlaying();
+                } else {
+                    startPlaying();
+                }
+            });
+
+            // 上一曲按钮点击事件
+            document.getElementById('player-prev').addEventListener('click', function () {
+                currentMusicIndex = (currentMusicIndex - 1 + musicData.length) % musicData.length;
+                updatePlayer();
+                updateActiveItem();
+
+                // 如果当前正在播放，则继续播放新选择的歌曲
+                if (isPlaying) {
+                    resetAndContinuePlaying();
+                }
+            });
+
+            // 下一曲按钮点击事件
+            document.getElementById('player-next').addEventListener('click', function () {
+                currentMusicIndex = (currentMusicIndex + 1) % musicData.length;
+                updatePlayer();
+                updateActiveItem();
+
+                // 如果当前正在播放，则继续播放新选择的歌曲
+                if (isPlaying) {
+                    resetAndContinuePlaying();
+                }
+            });
+        });
+
+        // 更新播放器信息
+        function updatePlayer() {
+            const music = musicData[currentMusicIndex];
+            document.getElementById('current-artwork').src = music.artworkUrl;
+            document.getElementById('current-artwork').alt = music.title;
+            document.getElementById('current-title').textContent = music.title;
+            document.getElementById('current-description').textContent = music.description;
+            document.getElementById('total-time').textContent = music.duration;
+            document.getElementById('current-time').textContent = '00:00';
+
+            // 设置音频源
+            audioPlayer.src = music.audioUrl;
+
+            // 预加载音频
+            audioPlayer.load();
+
+            // 重置进度条
+            document.querySelector('.progress-current').style.width = '0%';
+        }
+
+        // 更新列表中活跃的音乐项
+        function updateActiveItem() {
+            document.querySelectorAll('.music-item').forEach((item, index) => {
+                item.classList.toggle('active', index === currentMusicIndex);
+            });
+        }
+
+        // 开始播放
+        function startPlaying() {
+            // 播放音频
+            audioPlayer.play().then(() => {
+                isPlaying = true;
+                document.getElementById('player-play').innerHTML = '<i class="fa fa-pause"></i>';
+            }).catch(error => {
+                console.error('播放失败:', error);
+                isPlaying = false;
+            });
+        }
+
+        // 暂停播放
+        function pausePlaying() {
+            audioPlayer.pause();
+            isPlaying = false;
+            document.getElementById('player-play').innerHTML = '<i class="fa fa-play"></i>';
+        }
+
+        // 重置并继续播放
+        function resetAndContinuePlaying() {
+            pausePlaying();
+            startPlaying();
+        }
+    </script>
+</body>
+
+</html>
